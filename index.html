@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Tracker</h1>
+    </header>
+
+    <main>
+        <section id="task-list">
+            <h2>Task List</h2>
+            <div id="tasks"></div>
+        </section>
+
+        <section id="add-task">
+            <h2>Add Task</h2>
+            <form id="task-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="description" placeholder="Description"></textarea>
+                <input type="date" id="due-date" required>
+                <select id="status" required>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
